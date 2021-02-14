@@ -90,12 +90,12 @@ body{
 	opacity: 1;
 }
 .menu__item:last-child{
-	padding-right: 105px;
+	padding-right: 15px;
 }
 .main-section{
 	padding:208px 0 200px 0;
 	padding-right: 63%;
-	background: url(img/Frame12.svg) no-repeat 88% 75%;
+	background: url(img/Frame12.svg) no-repeat 100% 75%;
 }
 .main-content__title{
 	margin:0 0  38px 0;
