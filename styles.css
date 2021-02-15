@@ -3,7 +3,7 @@ body{
 }
 .wrapper{
 	margin: auto;
-	width: 80%;
+	width: 81%;
 }
 .header{
 	display: flex;
@@ -17,9 +17,9 @@ body{
 }
 .logo{
 	position: relative;
-	padding: 40px 0;
-	padding-left: 44px;
-	font:bold 24px/31px pt_rerif, arial,helvetica,sans-serif;
+	padding: 34px 0;
+	padding-left: 43px;
+	font:bold 24px/33px pt_serifbold, arial,helvetica,sans-serif;
 }
 .logo__circle{
 	position: absolute;
@@ -42,8 +42,81 @@ body{
 	border-radius: 50%;
 }
 .menu__item{
-	padding: 0 13px;
+	position: relative;
+	font:500 18px/21px Roboto arial,helvetica,sans-serif;
+	color: #000;
+	text-decoration: none;
+	transition: opacity .5s;
+}
+.menu__item:nth-child(1){
+	margin-right: 28px;
+}
+.menu__item:nth-child(2){
+	margin-right: 25px;
+}
+.menu__item:nth-child(3){
+	margin-right: 30px;
+}
+.menu__item:nth-child(4){
+	margin-right: 31px;
+}
+.menu__item:nth-child(5)
+.menu__item:hover::after{
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #0056EC;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.menu__item_active:after{
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #0056EC;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.menu__item:hover{
+	opacity: .5;
+}
+.menu__item:hover:after,.menu__item_active:after{
+	opacity: 1;
 }
 .menu__item:last-child{
-	padding-right: 0; 
+	padding-right: 15px;
+}
+.main-section{
+	padding:208px 0 200px 0;
+	padding-right: 63%;
+	background: url(img/Frame12.svg) no-repeat 99% 75%;
+}
+.main-content__title{
+	margin:0 0  38px 0;
+	font: 700 67px/87px pt_serifbold,arial,helvetica,sans-serif;
+}
+.main-content__subtitle{
+	margin:0 0  56px 0;
+	font: 500 22px/26px roboto,arial,helvetica,sans-serif;
+}
+.main-content__title-text_highlight{
+	background: #ecf3ff;
+}
+.main-content__button{
+	padding: 18px 40px 18px 18px;
+	background: #0056ec;
+	font: 500 18px/21px roboto, arial,helvetica,sans-sarif;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #fff;
+	transition: opacity .5s;
+}
+.main-content__button:hover{
+	opacity: .5;
 }
