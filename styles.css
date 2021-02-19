@@ -12,13 +12,14 @@ body{
 .menu{
 	display: flex;
 	align-items: center;
+	margin: 21px 0 0 0;
 }
 .main-section{
 }
 .logo{
 	position: relative;
-	padding: 34px 0;
-	padding-left: 43px;
+	padding: 7px 0;
+	padding-left: 54px;
 	font:bold 24px/33px pt_serifbold, arial,helvetica,sans-serif;
 }
 .logo__circle{
@@ -49,13 +50,13 @@ body{
 	transition: opacity .5s;
 }
 .menu__item:nth-child(1){
-	margin-right: 28px;
+	margin-right: 27px;
 }
 .menu__item:nth-child(2){
-	margin-right: 25px;
+	margin-right: 28px;
 }
 .menu__item:nth-child(3){
-	margin-right: 30px;
+	margin-right: 26px;
 }
 .menu__item:nth-child(4){
 	margin-right: 31px;
@@ -110,13 +111,14 @@ body{
 	background: #ecf3ff;
 }
 .main-content__button{
-	padding: 18px 40px 18px 18px;
+	padding: 11px 35px 24px 24px;
 	background: #0056ec;
 	font: 500 18px/21px roboto, arial,helvetica,sans-sarif;
 	text-decoration: none;
 	border-radius: 4px;
 	color: #fff;
 	transition: opacity .5s;
+	margin-left: 6px;
 }
 .main-conten__button:hover{
 	opacity: .5;
@@ -124,7 +126,7 @@ body{
 	#menu__toggle{
 		opacity: 0;
 	}
-@media(max-width: 768px){
+@media(max-width: 1023px){
 	.logo__circle_color_durk-blue{
 		position: fixed;
 		top: 38px;
@@ -155,7 +157,6 @@ body{
 		color: #000;
 		font:500 30px/35px Roboto arial,helvetica,sans-serif;
 		padding-bottom: 24px;
-
 	}
 	.header{
 		margin-bottom: 13px;
@@ -164,23 +165,24 @@ body{
 		display: none;
 	}
 	.main-section{
-		margin:0 0  32px 0;
+		margin:62px 0  33px 0;
 		padding:74% 0 0;
 		background-size: 96%;
 		background-position: top center;
 		text-align: center;
 	}
 	.main-content__title{
-		margin: 43px 0 0 0;
+		margin: 43px 0 31px 0;
 		font: 700 30px/40px pt_serifbold,arial,helvetica,sans-serif;
 	}
 	.main-content__subtitle{
-		margin: 33px 0 37px 0;
-		padding-left: 20px;
+		margin: 0 auto;
 		font: 500 16px/19px roboto,arial,helvetica,sans-serif;
-		max-width: 250px;
+		max-width: 87%;
+		padding-bottom: 37px;
 	}
 	.main-content__button{
+		margin-top: 33px;
 		padding: 15px 22px 15px 22px;
 		font: 500 14px/16px roboto, arial,helvetica,sans-sarif;
 	}
@@ -216,7 +218,7 @@ body{
 	}
 		.menu__button > span,
 		.menu__button > span::before,
-		.menu__button > span::after {
+		.menu__button > span::after{
 		display: block;
 		position: absolute;
 		width: 100%;
@@ -236,5 +238,135 @@ body{
 		.menu__item_active:after{
 		display: none;
 		transition-duration: .25s;
+		}
+		.menu__item:nth-child(1){
+			margin:0;
+		}
+		.menu__item:nth-child(2){
+			margin:0
+		}
+		.menu__item:nth-child(3){
+			margin:0;
+		}
+		.menu__item:nth-child(4){
+			margin: 0 0 3px 0;
+		}
+		.menu__item:nth-child(5){
+			margin: 0;
+			padding: 0;
+		}
+	}
+@media (min-width: 1024px) and (max-width: 1230px) {
+		.wrapper {
+			margin: auto;
+			width: 93%;
+			max-width: 1024px;
+			}
+			.menu{
+				margin:0;
+			}
+			.logo{
+				padding: 7px 0px 0 47px;
+			}
+			.logo__text{
+				font: 700 24px/32px pt_serifbold,arial,helvetica,sans-serif;
+			}
+			.menu__item{
+				font:500 14px/16px Roboto arial,helvetica,sans-serif;
+			}
+			.burger-menu{
+				padding: 23px 0 0 0;
+			}
+			.menu__item:last-child{
+				padding:0;
+			}
+			.menu__item:nth-child(1){
+				margin-right: 28px;
+			}
+			.menu__item:nth-child(2){
+				margin-right: 25px;
+			}
+			.menu__item:nth-child(3){
+				margin-right: 30px;
+			}
+			.menu__item:nth-child(4){
+				margin-right: 31px;
+			}
+			.main-content__title{
+				font: 700 50px/66px pt_serifbold,arial,helvetica,sans-serif;
+				width: 434px;
+			}
+			.main-section{
+				background-size: 55%;
+				padding: 117px 0px 85px 0px;
+				background-position: right 100px;
+			}
+			.main-content__subtitle{
+				font: 500 18px/21px roboto,arial,helvetica,sans-serif;
+				width: 367px;
+				word-spacing: 1px;
+			}
+			.main-content__button{
+				font: 500 14px/16px roboto, arial,helvetica,sans-sarif;
+				padding:17px 24px 11px 20px;
+				margin:0 0 0 3px;
+			}
+		}
+@media (min-width: 1366px) and (max-width: 1840px){
+	.wrapper {
+			margin: auto;
+			width: 69%;
+			max-width: 1366px;
+			}
+			.menu{
+				margin:0;
+			}
+			.logo{
+				padding: 7px 0px 0 47px;
+			}
+			.logo__text{
+				font: 700 24px/32px pt_serifbold,arial,helvetica,sans-serif;
+			}
+			.menu__item{
+				font:500 14px/16px Roboto arial,helvetica,sans-serif;
+			}
+			.burger-menu{
+				padding: 23px 0 0 0;
+			}
+			.menu__item:last-child{
+				padding:0;
+				margin:0;
+			}
+			.menu__item:nth-child(1){
+				margin-right: 28px;
+			}
+			.menu__item:nth-child(2){
+				margin-right: 25px;
+			}
+			.menu__item:nth-child(3){
+				margin-right: 30px;
+			}
+			.menu__item:nth-child(4){
+				margin-right: 34px;
+			}
+			.main-content__title{
+				font: 700 50px/66px pt_serifbold,arial,helvetica,sans-serif;
+				width: 434px;
+			}
+			.main-section{
+				background-size: 55%;
+				padding: 117px 0px 85px 0px;
+				background-position: right 100px;
+			}
+			.main-content__subtitle{
+				font: 500 18px/21px roboto,arial,helvetica,sans-serif;
+				width: 367px;
+				word-spacing: 1px;
+			}
+			.main-content__button{
+				font: 500 14px/16px roboto, arial,helvetica,sans-sarif;
+				padding:16px 22px 11px 20px;
+				margin:0 0 0 3px;
+			}
 		}
 }
