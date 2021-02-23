@@ -14,8 +14,6 @@ body{
 	align-items: center;
 	margin: 21px 0 0 0;
 }
-.main-section{
-}
 .logo{
 	position: relative;
 	padding: 7px 0;
@@ -158,7 +156,6 @@ body{
 		top: 0;
 		width: 100%;
 		height: 100%;
-		margin: 0;
 		padding: 80px;
 		list-style: none;
 		background: #fff;
