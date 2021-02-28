@@ -347,9 +347,6 @@ body{
 		padding: 17px 24px 11px 20px;
 	}
 }
-	.main-content__button:hover{
-		opacity: .5;
-}
 }
 @media (min-width: 1366px) and (max-width: 1840px){
 	.wrapper {
